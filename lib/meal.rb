@@ -1,8 +1,10 @@
+require "pry"
 class Meal
     attr_accessor :waiter, :customer, :tip, :total
     @@all = []
 
-    def initialize(waiter, customer, tip=0, total)
+    def initialize(waiter, customer, total, tip=0)
+       # binding.pry
         @waiter = waiter
         @customer = customer
         @tip = tip
